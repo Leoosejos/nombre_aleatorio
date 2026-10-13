@@ -24,7 +24,7 @@ def crear_archivo():
     # Se repite hasta encontrar un nombre que no exista
     creado = False
     while not creado:
-        nombre = generar_nombre() + ".txt"
+        nombre = generar_nombre() + ".img"
         ruta = os.path.join(CARPETA, nombre)
         if not os.path.exists(ruta):
             archivo = open(ruta, "w")
